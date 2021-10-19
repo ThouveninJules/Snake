@@ -10,10 +10,12 @@ LFLAGS	:=	-lsfml-graphics -lsfml-window -lsfml-system ./include/*.hpp
 
 OBJ	:=	$(SRC:.cpp=.o)
 
+INC 	:= 	$(INCLUDES:.hpp=.o)
+
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-		$(CC)  -o $(NAME) $(OBJ) $(LFLAGS)
+		$(CC)  -o $(NAME) $(OBJ) $(INC) $(LFLAGS)
 
 clean:
 	$(RM) $(OBJ)
