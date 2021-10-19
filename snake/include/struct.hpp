@@ -8,7 +8,7 @@ struct snake
 
 struct fruit
 {
-  int x, y;
+  int  x, y;
 }f;
 
 #endif /* STRUCT_HPP_ */

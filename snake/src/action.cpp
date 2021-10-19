@@ -1,4 +1,8 @@
+#ifndef FONCTION_ACTION
+#define FONCTION_ACTION
+
 #include "../include/struct.hpp"
+
 void Action(int size, int var)// dépacement et suivis des cases                                                       
   
 {
@@ -26,3 +30,5 @@ void Action(int size, int var)// dépacement et suivis des cases
     }
 
 }
+
+#endif

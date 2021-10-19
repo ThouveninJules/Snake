@@ -1,5 +1,9 @@
-#include "../include/struct.hpp"
-void Action()// dépacement et suivis des cases                                                       
+#ifndef FONCTION_ACTION
+#define FONCTION_ACTION
+
+//#include "../include/struct.hpp"
+
+void Action(int size, int var, snake s[])// dépacement et suivis des cases                                                       
   
 {
 
@@ -26,3 +30,5 @@ void Action()// dépacement et suivis des cases
     }
 
 }
+
+#endif

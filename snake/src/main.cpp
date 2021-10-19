@@ -1,10 +1,11 @@
+
+#ifndef FONCTION_MAIN
+#define FONCTION_MAIN
+
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
-#include "../include/struct.hpp"
 #include "../include/action.hpp"
 
-int x = 250;
-int y = 250;
 int var = 1;
 int size = 3;//taille du snake
 
@@ -35,12 +36,12 @@ int main() {
           Action(size,var);
           timer.restart();
         }
-
+      
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){var = 0;}
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){var = 1;}
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){var = 2;}
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){ var = 3;}
-
+      
       if(s[0].x == f.x && s[0].y == f.y )
 	{
 	  srand(time(NULL));
@@ -62,3 +63,4 @@ int main() {
 return 0;
 }
  
+#endif
