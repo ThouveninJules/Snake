@@ -1,50 +1,13 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 #include "../include/struct.hpp"
-#include "../include/Action.hpp"
+#include "../include/action.hpp"
 
 int x = 250;
 int y = 250;
 int var = 1;
-int size = 3;//taille du snake           
-/*
-struct snake
-{
-  int x, y;
-}s[100];
+int size = 3;//taille du snake
 
-struct fruit
-{
-  int x, y;
-}f;
-
-void Action()// dépacement et suivis des cases                                                                                                                                                                                              
-{
-  
-  for(int i = size ; i>0 ; i--)
-    {
-      s[i].x = s[i-1].x;
-      s[i].y = s[i-1].y;
-    }
-  if(var == 0)
-    {
-      s[0].y -= 1;
-    }
-  if(var == 1)
-    {
-      s[0].x += 1;
-    }
-  if(var == 2)
-    {
-      s[0].y += 1;
-    }
-  if(var == 3)
-    {
-      s[0].x -= 1;
-    }
-  
-}
-*/
 int main() {
   
   sf::RenderWindow window(sf::VideoMode(500,500),"SFML rks");
@@ -78,7 +41,7 @@ int main() {
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){var = 2;}
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){ var = 3;}
 
-      if(s[0].x == fruit.getPosition(x) && s[0].y == fruit.getPosition(y) )
+      if(s[0].x == f.x && s[0].y == f.y )
 	{
 	  srand(time(NULL));
 	  size++;
