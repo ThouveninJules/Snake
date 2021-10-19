@@ -32,7 +32,7 @@ int main() {
       
       if(timer.getElapsedTime().asMilliseconds()>200)
         {
-          Action();
+          Action(size,var);
           timer.restart();
         }
 

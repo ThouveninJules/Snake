@@ -1,5 +1,5 @@
 #include "../include/struct.hpp"
-void Action(int size, int var)// dépacement et suivis des cases                                                       
+void Action()// dépacement et suivis des cases                                                       
   
 {
 
