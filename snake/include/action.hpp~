@@ -1,6 +1,6 @@
 #ifndef ACTION_HPP
 #define ACTION_HPP
 
-void Action(int size, int var, snake s[]);
+void Action(int size, int var, struct snake s[]);
 
 #endif /* ACTION_HPP_ */

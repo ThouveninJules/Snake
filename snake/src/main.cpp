@@ -9,6 +9,13 @@
 int var = 1;
 int size = 3;//taille du snake
 
+struct snake s[100];
+
+struct fruit
+{
+  int x,y;
+}f;
+
 int main() {
   
   sf::RenderWindow window(sf::VideoMode(500,500),"SFML rks");
@@ -33,7 +40,7 @@ int main() {
       
       if(timer.getElapsedTime().asMilliseconds()>200)
         {
-          Action(size,var);
+          Action(size,var,s);
           timer.restart();
         }
       
@@ -55,7 +62,7 @@ int main() {
       window.draw(fruit);
       for (int i = 0 ; i < size ; i++)
 	{
-	  snake.setPosition(s[i].x*30 , s[i].y*30);
+	  snake.setPosition(s[i].x*size , s[i].y*size);
 	  window.draw(snake);
 	}
       window.display();

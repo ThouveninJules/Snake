@@ -1,5 +1,5 @@
-#ifndef STRUCT_HPP_
-#define STRUCT_HPP_
+#ifndef STRUCT_HPP
+#define STRUCT_HPP
 
 struct snake
 {
@@ -11,4 +11,4 @@ struct fruit
   int  x, y;
 }f;
 
-#endif /* STRUCT_HPP_ */
+#endif

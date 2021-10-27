@@ -1,9 +1,12 @@
 #ifndef FONCTION_ACTION
 #define FONCTION_ACTION
 
-#include "../include/struct.hpp"
+typedef struct snake
+{
+  int x,y;
+}s[100];
 
-void Action(int size, int var)// dépacement et suivis des cases                                                       
+void Action(int size, int var,snake s[])// dépacement et suivis des cases                                                       
   
 {
 
